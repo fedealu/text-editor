@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 import { ControlPanelComponent } from './control-panel/control-panel.component';
 import { HeaderComponent } from './header/header.component';
 import { FileComponent } from './file/file.component';
+import { FooterComponent } from './footer/footer.component';
 import { TextService } from './text-service/text.service';
 
 describe('AppComponent', () => {
@@ -12,6 +13,7 @@ describe('AppComponent', () => {
         AppComponent,
         ControlPanelComponent,
         HeaderComponent,
+        FooterComponent,
         FileComponent
       ],
       providers: [TextService]

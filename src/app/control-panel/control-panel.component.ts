@@ -1,14 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-control-panel',
   templateUrl: './control-panel.component.html',
-  styleUrls: ['./control-panel.component.css']
+  styleUrls: ['./control-panel.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ControlPanelComponent implements OnInit {
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
+export class ControlPanelComponent {
 }
