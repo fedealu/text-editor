@@ -1,0 +1,37 @@
+:host {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.format-actions {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+
+  app-action {
+    margin-right: 0.5rem;
+  }
+}
+
+button + button {
+  margin-left: 5px;
+}
+
+button {
+  outline: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  mat-icon {
+    height: 1rem;
+    width: 1rem;
+    font-size: 1rem;
+  }
+}

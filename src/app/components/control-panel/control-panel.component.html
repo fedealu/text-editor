@@ -1,0 +1,6 @@
+<div class="format-actions">
+  <app-action *ngFor="let action of actions" [action]="action"></app-action>
+  <button mat-icon-button title="save" (click)="save()">
+    <mat-icon>save</mat-icon>
+  </button>
+</div>

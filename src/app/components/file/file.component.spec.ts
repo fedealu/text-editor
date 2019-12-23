@@ -1,9 +1,9 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { FileComponent } from './file.component';
-import { TextService } from '../text-service/text.service';
+import { FileComponent } from "./file.component";
+import { TextService } from "../../services/text-service/text.service";
 
-describe('FileComponent', () => {
+describe("FileComponent", () => {
   let component: FileComponent;
   let fixture: ComponentFixture<FileComponent>;
 
@@ -11,8 +11,7 @@ describe('FileComponent', () => {
     TestBed.configureTestingModule({
       declarations: [FileComponent],
       providers: [TextService]
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,7 +20,7 @@ describe('FileComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

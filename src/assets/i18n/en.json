@@ -1,0 +1,25 @@
+{
+  "action": {
+    "synonims": "Word Ideas",
+    "bold": {
+      "short": "B",
+      "title": "Bold"
+    },
+    "italic": {
+      "short": "I",
+      "title": "Italic"
+    },
+    "strikeThrough": {
+      "short": "ST",
+      "title": "Strike Through"
+    },
+    "underline": {
+      "short": "U",
+      "title": "Underline"
+    },
+    "foreColor": {
+      "short": "FC",
+      "title": "Font Color"
+    }
+  }
+}

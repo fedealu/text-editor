@@ -1,0 +1,47 @@
+:host {
+  position: absolute;
+}
+
+.poppable-control-panel {
+  background-color: white;
+  border: 1px solid #ddd;
+  display: flex;
+  width: 300px;
+  padding: 0.25rem;
+  border-radius: 4px;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+
+  &.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0.25rem;
+  border-right: 1px solid #ddd;
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+
+  app-actions {
+    width: 100%;
+  }
+}
+
+.synonims {
+  flex-grow: 1;
+  select {
+    margin-top: 0.5rem;
+  }
+}
+
+.form-control {
+  display: flex;
+  flex-flow: column;
+}

@@ -1,0 +1,45 @@
+$actionMap: (
+  "bold": (
+    font-weight: bold
+  ),
+  "italic": (
+    font-style: italic
+  ),
+  "strikeThrough": (
+    text-decoration: line-through
+  ),
+  "underline": (
+    text-decoration: underline
+  )
+);
+
+.action {
+  outline: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+
+  @each $actionName, $actionStyles in $actionMap {
+    &.#{$actionName} {
+      @each $prop, $value in $actionStyles {
+        #{$prop}: $value;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: #ddd;
+  }
+
+  &.active {
+    background-color: #eaeaea;
+  }
+}
+
+.color-picker {
+  outline: none;
+  width: 20px;
+  border: none;
+}

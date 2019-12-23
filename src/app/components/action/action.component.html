@@ -1,0 +1,20 @@
+<button
+  class="action {{ action.format }}"
+  [ngClass]="{ active: activeAction }"
+  type="button"
+  title="{{ action.title | translate }}"
+  (click)="onClickHandler($event)"
+>
+  {{ action.label | translate }}
+  <ng-container *ngIf="action.format == 'foreColor'">
+    <ng-container *ngTemplateOutlet="fontColor"></ng-container>
+  </ng-container>
+</button>
+
+<ng-template #fontColor>
+  <input
+    [(colorPicker)]="value"
+    [style.background]="value"
+    class="color-picker"
+  />
+</ng-template>

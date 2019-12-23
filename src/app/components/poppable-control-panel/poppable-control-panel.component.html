@@ -1,0 +1,20 @@
+<div
+  class="poppable-control-panel"
+  #poppableControlPanel
+  (click)="handleClick($event)"
+>
+  <div class="buttons">
+    <app-action *ngFor="let action of actions" [action]="action"></app-action>
+  </div>
+  <div class="synonims">
+    <div class="form-control">
+      <label for="synonims">{{ "action.synonims" | translate }}</label>
+      <select name="synonims" id="synonims" [formControl]="synonimControl">
+        <option selected="true" value="0">Select your synonim</option>
+        <option value="{{ synonim.word }}" *ngFor="let synonim of synonims">{{
+          synonim.word
+        }}</option>
+      </select>
+    </div>
+  </div>
+</div>
